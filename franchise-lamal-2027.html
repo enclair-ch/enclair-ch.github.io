@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quelle franchise LAMal choisir pour 2027 ? | En clair</title>
+<meta name="description" content="Franchise 300 ou 2500 CHF ? Le calcul expliqué simplement, avec un calculateur gratuit et les délais pour 2027.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/franchise.js" defer></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html">En <span>clair</span></a>
+    <nav class="lang"><a href="franchise-lamal-2027.html" aria-current="true" hreflang="fr">FR</a><a href="de/franchise-2027.html" hreflang="de">DE</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <article>
+    <h1>Quelle franchise LAMal choisir pour 2027&nbsp;?</h1>
+    <p class="lead">300 ou 2500 francs&nbsp;? La bonne réponse dépend d'un seul chiffre&nbsp;: ce que vous dépensez réellement pour votre santé. Voici comment le calculer, sans jargon.</p>
+    <p class="meta">Mis à jour le 14 octobre 2026 · Lecture&nbsp;: 5 minutes · Adultes dès 19 ans</p>
+
+    <div class="box key">
+      <h2>L'essentiel en 30 secondes</h2>
+      <ul>
+        <li>Plus votre franchise est haute, plus votre prime mensuelle baisse — mais plus vous payez de votre poche en cas de frais.</li>
+        <li><strong>Règle de bon sens&nbsp;:</strong> si vos frais médicaux restent en général sous <strong>environ 2000&nbsp;CHF par an</strong>, la franchise de 2500 est souvent la moins chère. Au-delà, la franchise de 300 l'emporte. Les franchises intermédiaires sont rarement le meilleur choix.</li>
+        <li>Choisir 2500 n'a de sens que si vous pouvez <strong>mettre de côté ces 2500&nbsp;CHF</strong> en cas de coup dur.</li>
+        <li>Délais pour 2027&nbsp;: baisser sa franchise → <strong>30 novembre 2026</strong>. L'augmenter → <strong>31 décembre 2026</strong>. C'est la date de réception par la caisse qui compte.</li>
+      </ul>
+    </div>
+
+    <h2>Comment fonctionne la franchise</h2>
+    <p>Quand vous allez chez le médecin ou achetez un médicament remboursé, vous payez en trois couches&nbsp;:</p>
+    <ol>
+      <li><strong>La franchise</strong>&nbsp;: les premiers francs de l'année sont entièrement à votre charge, jusqu'au montant choisi (300, 500, 1000, 1500, 2000 ou 2500&nbsp;CHF).</li>
+      <li><strong>La quote-part</strong>&nbsp;: une fois la franchise atteinte, vous payez encore 10&nbsp;% des frais, mais au maximum <strong>700&nbsp;CHF par an</strong>.</li>
+      <li><strong>Le reste</strong> est payé par la caisse.</li>
+    </ol>
+    <p>À cela s'ajoute la prime, que vous payez chaque mois quoi qu'il arrive. Votre coût réel sur une année, c'est donc&nbsp;: <strong>primes + franchise utilisée + quote-part</strong>. C'est ce total qu'il faut comparer — pas seulement la prime.</p>
+    <p class="hint">À noter&nbsp;: en cas d'hospitalisation, une contribution de 15&nbsp;CHF par jour s'ajoute (sauf exceptions). Elle est identique quelle que soit la franchise, donc elle ne change pas le choix.</p>
+
+    <h2>Le calcul, avec votre situation</h2>
+    <p>Indiquez votre prime et estimez vos frais médicaux annuels (consultations, médicaments, analyses…). Regardez vos décomptes de l'année passée&nbsp;: c'est la meilleure base.</p>
+
+    <div class="box calc">
+      <fieldset>
+        <label class="radio"><input type="radio" name="mode" id="mode-est" checked> <span>Estimation rapide&nbsp;: je connais ma prime avec la franchise de 300&nbsp;CHF</span></label>
+        <label class="radio"><input type="radio" name="mode" id="mode-own"> <span>Calcul précis&nbsp;: j'entre les primes de ma caisse pour chaque franchise</span></label>
+      </fieldset>
+
+      <div id="base-wrap">
+        <label for="base">Prime mensuelle avec franchise 300&nbsp;CHF</label>
+        <input type="number" id="base" value="487.60" min="0" step="0.05" inputmode="decimal">
+        <p class="hint">Par défaut&nbsp;: la prime moyenne adulte 2027 (487.60&nbsp;CHF, OFSP). Les autres primes sont estimées avec le rabais maximal autorisé par la loi — votre caisse peut accorder moins.</p>
+      </div>
+
+      <div id="own-premiums" class="premiums">
+        <div><label for="p300">300</label><input type="number" id="p300" value="487.60" step="0.05" inputmode="decimal"></div>
+        <div><label for="p500">500</label><input type="number" id="p500" value="476.00" step="0.05" inputmode="decimal"></div>
+        <div><label for="p1000">1000</label><input type="number" id="p1000" value="446.80" step="0.05" inputmode="decimal"></div>
+        <div><label for="p1500">1500</label><input type="number" id="p1500" value="417.60" step="0.05" inputmode="decimal"></div>
+        <div><label for="p2000">2000</label><input type="number" id="p2000" value="388.40" step="0.05" inputmode="decimal"></div>
+        <div><label for="p2500">2500</label><input type="number" id="p2500" value="359.30" step="0.05" inputmode="decimal"></div>
+      </div>
+
+      <label for="costs">Mes frais médicaux estimés par an&nbsp;: <span id="costs-out"></span></label>
+      <input type="range" id="costs" min="0" max="12000" step="50" value="800">
+      <p class="hint">Repère&nbsp;: un adulte en bonne santé dépense souvent quelques centaines de francs par an&nbsp;; un traitement régulier dépasse vite 2000&nbsp;CHF.</p>
+
+      <div class="table-scroll">
+        <table aria-live="polite">
+          <thead><tr><th>Franchise</th><th class="num">Primes / an</th><th class="num">De ma poche</th><th class="num">Total / an</th><th></th></tr></thead>
+          <tbody id="result-body"></tbody>
+        </table>
+      </div>
+      <p class="result" id="result-text"></p>
+    </div>
+
+    <h2>Trois questions de bon sens avant de choisir</h2>
+    <h3>1. Mes frais sont-ils prévisibles&nbsp;?</h3>
+    <p>Maladie chronique, traitement régulier, grossesse prévue, opération planifiée&nbsp;: si vous savez que vous dépasserez 2000&nbsp;CHF, la franchise de 300 est presque toujours le bon choix.</p>
+    <h3>2. Puis-je absorber un coup dur&nbsp;?</h3>
+    <p>Avec 2500&nbsp;CHF de franchise, une seule mauvaise année peut vous coûter jusqu'à 3200&nbsp;CHF de votre poche (franchise + quote-part maximale). Si ce montant mettrait votre budget en danger, une franchise basse est une assurance… pour votre tranquillité.</p>
+    <h3>3. Ai-je comparé les caisses&nbsp;?</h3>
+    <p>À prestations identiques — l'assurance de base est la même partout — les primes varient fortement d'une caisse à l'autre. Le comparateur officiel et gratuit de la Confédération est <a href="https://www.priminfo.admin.ch" rel="noopener">priminfo.admin.ch</a>.</p>
+
+    <h2>Les délais pour 2027</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Je veux…</th><th>La caisse doit avoir reçu ma lettre au plus tard le</th></tr></thead>
+        <tbody>
+          <tr><td>Baisser ma franchise</td><td><strong>30 novembre 2026</strong></td></tr>
+          <tr><td>Changer de caisse (assurance de base)</td><td><strong>30 novembre 2026</strong></td></tr>
+          <tr><td>Quitter un modèle alternatif (médecin de famille, HMO…)</td><td><strong>30 novembre 2026</strong></td></tr>
+          <tr><td>Augmenter ma franchise</td><td><strong>31 décembre 2026</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>L'OFSP conseille d'envoyer votre courrier <strong>avant le 15 novembre</strong>, en recommandé ou en Courrier&nbsp;A&nbsp;Plus, pour garder une preuve.</p>
+
+    <h2>Ce qui pourrait changer</h2>
+    <p>Le Conseil fédéral a proposé de relever la franchise minimale de 300 à <strong>400&nbsp;CHF</strong>. Le projet doit encore passer devant le Parlement et aucune date n'est fixée. <strong>Pour 2027, rien ne change&nbsp;:</strong> la franchise de 300&nbsp;CHF existe toujours. Nous vous tiendrons informé·e dans la newsletter.</p>
+
+    <section class="newsletter">
+      <h2>Le Réveil — chaque lundi, un sujet expliqué en clair</h2>
+      <p>Assurances, impôts, prévoyance, budget&nbsp;: ce qu'il faut savoir, au bon moment, sans publicité ni conflit d'intérêts.</p>
+      <p><em>Inscription bientôt disponible.</em></p>
+    </section>
+
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li>OFSP — <a href="https://www.admin.ch/fr/newnsb/BfuGvedj0OOX" rel="noopener">Primes 2027&nbsp;: +5,0&nbsp;% en moyenne</a> (29.09.2026)</li>
+      <li>OFSP — <a href="https://www.bag.admin.ch/dam/fr/sd-web/92VbSMPCd--v/PG27-FB-Versichererwechsel_FR.pdf" rel="noopener">Changer d'assureur ou de franchise pour 2027 (PDF)</a></li>
+      <li>OFSP — <a href="https://www.bag.admin.ch/fr/newnsb/XwGuCzuLkCYzd1V5uKSav" rel="noopener">Consultation sur la franchise minimale</a></li>
+      <li>Confédération — <a href="https://www.priminfo.admin.ch" rel="noopener">priminfo.admin.ch</a>, comparateur officiel des primes</li>
+    </ul>
+
+    <p class="disclaimer">Cet article est une information générale, pas un conseil personnalisé. Les chiffres du calculateur sont des estimations&nbsp;: vérifiez toujours les primes exactes de votre caisse. En clair ne reçoit aucune commission d'assureurs.</p>
+  </article>
+</main>
+
+<footer class="site"><div class="wrap">En clair / Im Klartext — la vie pratique en Suisse, expliquée clairement.</div></footer>
+</body>
+</html>

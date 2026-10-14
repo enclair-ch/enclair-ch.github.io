@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welche Franchise für 2027? | Im Klartext</title>
+<meta name="description" content="Franchise 300 oder 2500 Franken? Die Rechnung einfach erklärt – mit kostenlosem Rechner und allen Fristen für 2027.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/franchise.js" defer></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html">Im <span>Klartext</span></a>
+    <nav class="lang"><a href="../franchise-lamal-2027.html" hreflang="fr">FR</a><a href="franchise-2027.html" aria-current="true" hreflang="de">DE</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <article>
+    <h1>Welche Franchise für 2027?</h1>
+    <p class="lead">300 oder 2500 Franken? Die richtige Antwort hängt von einer einzigen Zahl ab: wie viel Sie tatsächlich für Ihre Gesundheit ausgeben. So rechnen Sie es aus – ohne Fachchinesisch.</p>
+    <p class="meta">Aktualisiert am 14. Oktober 2026 · Lesezeit: 5 Minuten · Erwachsene ab 19 Jahren</p>
+
+    <div class="box key">
+      <h2>Das Wichtigste in 30 Sekunden</h2>
+      <ul>
+        <li>Je höher die Franchise, desto tiefer die monatliche Prämie – aber desto mehr zahlen Sie im Krankheitsfall selbst.</li>
+        <li><strong>Faustregel:</strong> Bleiben Ihre Gesundheitskosten meist unter <strong>rund 2000 Franken pro Jahr</strong>, ist die Franchise von 2500 oft am günstigsten. Darüber gewinnt die Franchise von 300. Mittlere Franchisen sind selten die beste Wahl.</li>
+        <li>2500 lohnt sich nur, wenn Sie <strong>diese 2500 Franken auf der Seite haben</strong> – für ein schlechtes Jahr.</li>
+        <li>Fristen für 2027: Franchise senken → <strong>30. November 2026</strong>. Franchise erhöhen → <strong>31. Dezember 2026</strong>. Massgebend ist der Eingang bei der Krankenkasse.</li>
+      </ul>
+    </div>
+
+    <h2>So funktioniert die Franchise</h2>
+    <p>Wenn Sie zum Arzt gehen oder ein kassenpflichtiges Medikament kaufen, zahlen Sie in drei Stufen:</p>
+    <ol>
+      <li><strong>Die Franchise:</strong> Die ersten Franken im Jahr zahlen Sie vollständig selbst, bis zum gewählten Betrag (300, 500, 1000, 1500, 2000 oder 2500 Franken).</li>
+      <li><strong>Der Selbstbehalt:</strong> Ist die Franchise erreicht, zahlen Sie noch 10 % der Kosten, höchstens aber <strong>700 Franken pro Jahr</strong>.</li>
+      <li><strong>Den Rest</strong> übernimmt die Krankenkasse.</li>
+    </ol>
+    <p>Dazu kommt die Prämie, die Sie jeden Monat zahlen – egal, was passiert. Ihre tatsächlichen Kosten pro Jahr sind also: <strong>Prämien + bezahlte Franchise + Selbstbehalt</strong>. Genau diese Summe muss man vergleichen – nicht nur die Prämie.</p>
+    <p class="hint">Hinweis: Bei einem Spitalaufenthalt kommt ein Beitrag von 15 Franken pro Tag hinzu (mit Ausnahmen). Er ist bei jeder Franchise gleich und ändert die Wahl deshalb nicht.</p>
+
+    <h2>Die Rechnung für Ihre Situation</h2>
+    <p>Geben Sie Ihre Prämie ein und schätzen Sie Ihre jährlichen Gesundheitskosten (Arztbesuche, Medikamente, Analysen …). Die Abrechnungen des letzten Jahres sind die beste Grundlage.</p>
+
+    <div class="box calc">
+      <fieldset>
+        <label class="radio"><input type="radio" name="mode" id="mode-est" checked> <span>Schnelle Schätzung: Ich kenne meine Prämie mit Franchise 300 Franken</span></label>
+        <label class="radio"><input type="radio" name="mode" id="mode-own"> <span>Genaue Rechnung: Ich gebe die Prämien meiner Kasse für jede Franchise ein</span></label>
+      </fieldset>
+
+      <div id="base-wrap">
+        <label for="base">Monatsprämie mit Franchise 300 Franken</label>
+        <input type="number" id="base" value="487.60" min="0" step="0.05" inputmode="decimal">
+        <p class="hint">Standardwert: durchschnittliche Erwachsenenprämie 2027 (487.60 Franken, BAG). Die übrigen Prämien werden mit dem gesetzlich maximal erlaubten Rabatt geschätzt – Ihre Kasse kann weniger gewähren.</p>
+      </div>
+
+      <div id="own-premiums" class="premiums">
+        <div><label for="p300">300</label><input type="number" id="p300" value="487.60" step="0.05" inputmode="decimal"></div>
+        <div><label for="p500">500</label><input type="number" id="p500" value="476.00" step="0.05" inputmode="decimal"></div>
+        <div><label for="p1000">1000</label><input type="number" id="p1000" value="446.80" step="0.05" inputmode="decimal"></div>
+        <div><label for="p1500">1500</label><input type="number" id="p1500" value="417.60" step="0.05" inputmode="decimal"></div>
+        <div><label for="p2000">2000</label><input type="number" id="p2000" value="388.40" step="0.05" inputmode="decimal"></div>
+        <div><label for="p2500">2500</label><input type="number" id="p2500" value="359.30" step="0.05" inputmode="decimal"></div>
+      </div>
+
+      <label for="costs">Meine geschätzten Gesundheitskosten pro Jahr: <span id="costs-out"></span></label>
+      <input type="range" id="costs" min="0" max="12000" step="50" value="800">
+      <p class="hint">Orientierung: Gesunde Erwachsene haben oft nur einige hundert Franken Kosten pro Jahr; eine regelmässige Behandlung übersteigt schnell 2000 Franken.</p>
+
+      <div class="table-scroll">
+        <table aria-live="polite">
+          <thead><tr><th>Franchise</th><th class="num">Prämien / Jahr</th><th class="num">Selbst bezahlt</th><th class="num">Total / Jahr</th><th></th></tr></thead>
+          <tbody id="result-body"></tbody>
+        </table>
+      </div>
+      <p class="result" id="result-text"></p>
+    </div>
+
+    <h2>Drei Fragen mit gesundem Menschenverstand</h2>
+    <h3>1. Sind meine Kosten vorhersehbar?</h3>
+    <p>Chronische Krankheit, regelmässige Behandlung, geplante Schwangerschaft oder Operation: Wenn Sie wissen, dass Sie über 2000 Franken kommen, ist die Franchise von 300 fast immer die richtige Wahl.</p>
+    <h3>2. Kann ich ein schlechtes Jahr verkraften?</h3>
+    <p>Mit 2500 Franken Franchise kann ein einziges schlechtes Jahr Sie bis zu 3200 Franken aus der eigenen Tasche kosten (Franchise + maximaler Selbstbehalt). Würde dieser Betrag Ihr Budget gefährden, ist eine tiefe Franchise eine Versicherung – für Ihre Ruhe.</p>
+    <h3>3. Habe ich die Kassen verglichen?</h3>
+    <p>Die Leistungen der Grundversicherung sind überall gleich – die Prämien aber unterscheiden sich stark. Der offizielle und kostenlose Prämienrechner des Bundes ist <a href="https://www.priminfo.admin.ch" rel="noopener">priminfo.admin.ch</a>.</p>
+
+    <h2>Fristen für 2027</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Ich will …</th><th>Mein Brief muss spätestens eintreffen am</th></tr></thead>
+        <tbody>
+          <tr><td>Die Franchise senken</td><td><strong>30. November 2026</strong></td></tr>
+          <tr><td>Die Krankenkasse wechseln (Grundversicherung)</td><td><strong>30. November 2026</strong></td></tr>
+          <tr><td>Ein alternatives Modell verlassen (Hausarzt, HMO …)</td><td><strong>30. November 2026</strong></td></tr>
+          <tr><td>Die Franchise erhöhen</td><td><strong>31. Dezember 2026</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Das BAG empfiehlt, den Brief <strong>bis 15. November</strong> eingeschrieben oder per A-Post Plus zu senden – so haben Sie einen Nachweis.</p>
+
+    <h2>Was sich ändern könnte</h2>
+    <p>Der Bundesrat hat vorgeschlagen, die Mindestfranchise von 300 auf <strong>400 Franken</strong> zu erhöhen. Das Parlament muss noch entscheiden, ein Datum steht nicht fest. <strong>Für 2027 ändert sich nichts:</strong> Die Franchise von 300 Franken gibt es weiterhin. Wir halten Sie im Newsletter auf dem Laufenden.</p>
+
+    <section class="newsletter">
+      <h2>Der Weckruf – jeden Montag ein Thema im Klartext</h2>
+      <p>Versicherungen, Steuern, Vorsorge, Budget: was man wissen muss, zur richtigen Zeit, ohne Werbung und ohne Interessenkonflikte.</p>
+      <p><em>Anmeldung bald verfügbar.</em></p>
+    </section>
+
+    <h2>Quellen</h2>
+    <ul class="sources">
+      <li>BAG – <a href="https://www.admin.ch/de/newnsb/BfuGvedj0OOX" rel="noopener">Prämien 2027: durchschnittlich +5,0 %</a> (29.09.2026)</li>
+      <li>BAG – <a href="https://www.bag.admin.ch/de/newnsb/XwGuCzuLkCYzd1V5uKSav" rel="noopener">Vernehmlassung zur Mindestfranchise</a></li>
+      <li>Bund – <a href="https://www.priminfo.admin.ch" rel="noopener">priminfo.admin.ch</a>, offizieller Prämienrechner</li>
+    </ul>
+
+    <p class="disclaimer">Dieser Artikel ist eine allgemeine Information, keine persönliche Beratung. Die Zahlen des Rechners sind Schätzungen: Prüfen Sie immer die genauen Prämien Ihrer Kasse. Im Klartext erhält keine Provisionen von Versicherern.</p>
+  </article>
+</main>
+
+<footer class="site"><div class="wrap">Im Klartext / En clair – der Schweizer Alltag, klar erklärt.</div></footer>
+</body>
+</html>
