@@ -93,6 +93,9 @@ td.num { white-space: nowrap; }
 
 .newsletter { background: var(--accent-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin: 40px 0 0; }
 .newsletter h2 { margin-top: 0; }
+.btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; padding: 12px 20px; border-radius: 8px; }
+.btn:hover { filter: brightness(1.08); }
+.newsletter small { color: var(--muted); }
 
 .sources { font-size: .9rem; color: var(--muted); }
 .sources li { margin: 4px 0; word-break: break-word; }
